@@ -129,7 +129,8 @@ Now, ssh into your `Jenkins-Ansible` server using ssh-agent
 
 `ssh -A ubuntu@public-ip`
 
-![](./images/connect%20via%20ssh%20tunnelling.PNG/conne)
+
+![](./images/connect%20via%20ssh%20tunnelling.PNG)
 
 ![](./images/testing%20ssh.PNG)
 
