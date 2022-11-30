@@ -96,11 +96,15 @@ Tip Every time you stop/start your `Jenkins-Ansible` server – you have to reco
 
 **Tip**: Give your branches descriptive and comprehensive names, for example, if you use Jira or Trello as a project management tool – include ticket number (e.g. `PRJ-145`) in the name of your branch and add a topic and a brief description what this branch is about – a `bugfix, hotfix, feature, release` (e.g. `feature/prj-145-lvm`)
 
+![](./images/connect%20%26%20create%20new%20branch.PNG)
+
 2. Checkout the newly created feature branch to your local machine and start building your code and directory structure
 3. Create a directory and name it `playbooks` – it will be used to store all your playbook files.
 4. Create a directory and name it `inventory` – it will be used to keep your hosts organised.
 5. Within the playbooks folder, create your first playbook, and name it `common.yml`
 6. Within the inventory folder, create an inventory file (.yml) for each environment (Development, Staging Testing and Production) `dev, staging, uat,` and `prod` respectively.
+
+![](./images/create%20folders%20and%20files.PNG)
 
 ## Set up an Ansible 
 
@@ -115,6 +119,8 @@ eval `ssh-agent -s`
 ssh-add <path-to-private-key>
 ```
 
+![](./images/upload%20key%20to%20ssh%20agent.PNG)
+
 Confirm the key has been added with the command below, you should see the name of your key
 
 `ssh-add -l`
@@ -122,6 +128,10 @@ Confirm the key has been added with the command below, you should see the name o
 Now, ssh into your `Jenkins-Ansible` server using ssh-agent
 
 `ssh -A ubuntu@public-ip`
+
+![](./images/connect%20via%20ssh%20tunnelling.PNG/conne)
+
+![](./images/testing%20ssh.PNG)
 
 Also notice, that your Load Balancer user is `ubuntu` and `user` for RHEL-based servers is ec2-user.
 
