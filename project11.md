@@ -14,7 +14,7 @@ This Project will make you appreciate DevOps tools even more by making most of t
 
 ![](./images/ansible%20config%20mgt.PNG)
 
-3. Instal Ansible
+3. Install Ansible
 
 ```
 sudo apt update
