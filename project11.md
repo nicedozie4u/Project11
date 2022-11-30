@@ -153,6 +153,8 @@ Update your `inventory/dev.yml` file with this snippet of code:
 <Load-Balancer-Private-IP-Address> ansible_ssh_user='ubuntu'
 ```
 
+![](./images/update%20files2.PNG)
+
 ## CREATE A COMMON PLAYBOOK
 
 It is time to start giving Ansible the instructions on what you needs to be performed on all servers listed in `inventory/dev`.
@@ -190,6 +192,8 @@ Update your `playbooks/common.yml` file with following code:
         state: latest
 
 ```
+
+![](./images/update%20files.PNG)
 
 Examine the code above and try to make sense out of it. This playbook is divided into two parts, each of them is intended to perform the same task: install `wireshark` utility (or make sure it is updated to the latest version) on your RHEL 8 and Ubuntu servers. It uses `root` user to perform this task and respective package manager: `yum` for RHEL 8 and `apt` for Ubuntu.
 
