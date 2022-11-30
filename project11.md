@@ -77,6 +77,19 @@ Tip Every time you stop/start your `Jenkins-Ansible` server – you have to reco
 
 `git clone <ansible-config-mgt repo link>`
 
+![](./images/connect%20vscode%20to%20ec2instance01.PNG)
+
+![](./images/connect%20vscode%20to%20ec2instance02.PNG)
+
+![](./images/connect%20vscode%20to%20ec2instance03.PNG)
+
+![](./images/connect%20vscode%20to%20ec2instance04.PNG)
+
+![](./images/connect%20vscode%20to%20ec2instance05.PNG)
+
+![](./images/connect%20vscode%20to%20ec2instance06.PNG)
+
+
 ## BEGIN ANSIBLE DEVELOPMENT
 
 1. In your ansible-config-mgt GitHub repository, create a new branch that will be used for development of a new feature.
@@ -216,7 +229,11 @@ Now, it is time to execute `ansible-playbook` command and verify if your playboo
 
 `ansible-playbook -i inventory/dev.yml playbooks/common.yml`
 
+![](./images/ansible%20playbook%20success.PNG)
+
 You can go to each of the servers and check if `wireshark` has been installed by running `which wireshark` or `wireshark --version`
+
+![](./images/wireshark%20installed.PNG)
 
 Your updated with Ansible architecture now looks like this:
 
