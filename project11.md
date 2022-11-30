@@ -31,19 +31,11 @@ Check your Ansible version by running ansible --version
 
 Create a new Freestyle project `ansible` in Jenkins and point it to your ‘ansible-config-mgt’ repository.
 
+![](./images/project%20ansible.PNG)
+
 Configure Webhook in GitHub and set webhook to trigger `ansible` build.
 
 Configure a Post-build job to save all (`**`) files, like you did it in Project 9.
-
-5. Test your setup by making some change in README.MD file in `master` branch and make sure that builds starts automatically and Jenkins saves the files (build artifacts) in following folder
-
-`ls /var/lib/jenkins/jobs/ansible/builds/<build_number>/archive/`
-
-**Note**: Trigger Jenkins project execution only for /main (master) branch.
-
-Now your setup will look like this:
-
-![](./images/jenkins_ansible_architech.png)
 
 ![](./images/source%20code%20mgt.PNG)
 
@@ -60,3 +52,14 @@ Now your setup will look like this:
 ![](./images/automatic%20push%20from%20Jenkins.PNG)
 
 ![](./images/confirm%20archieve.PNG)
+
+5. Test your setup by making some change in README.MD file in `master` branch and make sure that builds starts automatically and Jenkins saves the files (build artifacts) in following folder
+
+`ls /var/lib/jenkins/jobs/ansible/builds/<build_number>/archive/`
+
+**Note**: Trigger Jenkins project execution only for /main (master) branch.
+
+Now your setup will look like this:
+
+![](./images/jenkins_ansible_architech.png)
+
