@@ -226,15 +226,37 @@ git commit -m "commit message"
 
 ```
 
+![](./images/commit%20changes.PNG)
+
 2. Create a Pull request (PR)
 
 3. Wear a hat of another developer for a second, and act as a reviewer.
 
 4. If the reviewer is happy with your new feature development, merge the code to the `master` branch.
 
+![](./images/create%20pull%20request01.PNG)
+
+![](./images/create%20pull%20request02.PNG)
+
+![](./images/create%20pull%20request03.PNG)
+
+![](./images/create%20pull%20request04.PNG)
+
+![](./images/create%20pull%20request05.PNG)
+
+![](./images/create%20pull%20request06.PNG)
+
 5. Head back on your terminal, checkout from the feature branch into the master, and pull down the latest changes.
 
+![](./images/update%20main%20branch.PNG)
+
 Once your code changes appear in master branch – Jenkins will do its job and save all the files (build artifacts) to `/var/lib/jenkins/jobs/ansible/builds/<build_number>/archive/` directory on Jenkins-Ansible server.
+
+![](./images/jenkins%20automatically%20updated%20files.PNG)
+
+`/var/lib/jenkins/jobs/ansible/builds/<build_number>/archive/`
+
+![](./images/confirm%20build%20on%20artifact.PNG)
 
 ## RUN FIRST ANSIBLE TEST
 
