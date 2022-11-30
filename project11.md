@@ -47,17 +47,19 @@ Configure a Post-build job to save all (`**`) files, like you did it in Project 
 
 ![](./images/jenkins%20branches%20build.PNG)
 
-![](./images/update%20readme%20file.PNG)
 
-![](./images/automatic%20push%20from%20Jenkins.PNG)
-
-![](./images/confirm%20archieve.PNG)
 
 5. Test your setup by making some change in README.MD file in `master` branch and make sure that builds starts automatically and Jenkins saves the files (build artifacts) in following folder
 
 `ls /var/lib/jenkins/jobs/ansible/builds/<build_number>/archive/`
 
 **Note**: Trigger Jenkins project execution only for /main (master) branch.
+
+![](./images/update%20readme%20file.PNG)
+
+![](./images/automatic%20push%20from%20Jenkins.PNG)
+
+![](./images/confirm%20archieve.PNG)
 
 Now your setup will look like this:
 
